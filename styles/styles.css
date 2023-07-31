@@ -1,0 +1,73 @@
+ h1 {
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  padding: 12px;
+}
+
+.meme {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+
+.meme img {
+  height: auto;
+  width: 500px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.meme .top-text, .meme .bottom-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 15px 0;
+  font-family: impact;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0px 2px 0 #000,
+  2px 0px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000,
+  2px 2px 5px #000;
+}
+
+.top-text {
+  top: 0;
+}
+
+.bottom-text {
+  bottom: 0;
+}
+
+.btn-danger {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 30%;
+  display: none;
+}
+
+.meme:hover .btn-danger {
+  display:block;
+}
+
+.jumbotron {
+  background-color: antiquewhite;
+}

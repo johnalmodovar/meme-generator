@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Meme Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="jumbotron">
+        <!-- Header for Meme Generator -->
+        <h1 class="display-4">Welcome to the Meme Generator!</h1>
+        <p class="lead">Fill out the page to start memeing.</p>
+        <hr class="my-4"/>
+        <!-- Grabbing URL, Top and Bottom Text -->
+        <form id="meme-form">
+          <div class="col-auto">
+            <label for="image-url">Image URL</label>
+            <input type="url" class="form-control" id="img-url" name="img-url" placeholder="Enter Image URL Here" required>
+            <label for="top-text">Top Text</label>
+            <input type="text" class="form-control" id="top-text-input" name="top-text" placeholder="Optional -- Top Text Goes Here">
+            <label for="bottom-text">Bottom Text</label>
+            <input type="text" class="form-control" id="bottom-text-input" name="bottom-text" placeholder="Optional -- Bottom Text Goes Here">
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          </div>
+        </form>
+      </div>
+      <!-- box where meme gets placed -->
+      <div class="container" id="meme-area"></div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
